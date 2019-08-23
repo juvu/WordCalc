@@ -10,9 +10,9 @@ RTX_WEBHOOK_URL = "http://in.qyapi.weixin.qq.com/cgi-bin/webhook/send?key=44d307
 
 def push_to_rtx(msg_json):
     print('\r\nposting to rtx...')
-    r = requests.post(RTX_WEBHOOK_URL, json=msg_json)
-    print(r.text + "\r\n")
-    print(r.status_code, r.reason, "\r\n\r\n")
+    #r = requests.post(RTX_WEBHOOK_URL, json=msg_json)
+    #print(r.text + "\r\n")
+    #print(r.status_code, r.reason, "\r\n\r\n")
 
 
 def generate_rtx_markdown(text):
