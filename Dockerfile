@@ -14,7 +14,7 @@ RUN apt-get update \
 
 COPY ./requirements.txt ./requirements.txt
 
-RUN pip install -r -i https://pypi.douban.com/simple/ requirements.txt 
+RUN pip install -r  requirements.txt -i https://pypi.douban.com/simple/
 
 COPY . ${APP_HOME}
 
